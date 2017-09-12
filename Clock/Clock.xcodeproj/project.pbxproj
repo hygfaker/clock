@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		AC12E01E1F66CE10008C4C03 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC12E01D1F66CE10008C4C03 /* main.m */; };
 		AC12E0211F66CE10008C4C03 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC12E0201F66CE10008C4C03 /* AppDelegate.m */; };
-		AC12E0241F66CE10008C4C03 /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC12E0231F66CE10008C4C03 /* MainController.m */; };
-		AC12E0271F66CE10008C4C03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC12E0251F66CE10008C4C03 /* Main.storyboard */; };
 		AC12E0291F66CE10008C4C03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC12E0281F66CE10008C4C03 /* Assets.xcassets */; };
 		AC12E02C1F66CE10008C4C03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC12E02A1F66CE10008C4C03 /* LaunchScreen.storyboard */; };
 		AC12E0371F66CE10008C4C03 /* ClockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC12E0361F66CE10008C4C03 /* ClockTests.m */; };
+		D2BB2BFF1F681670007ABA09 /* IndexController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB2BFD1F681670007ABA09 /* IndexController.m */; };
+		D2BB2C001F681670007ABA09 /* IndexController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2BB2BFE1F681670007ABA09 /* IndexController.xib */; };
+		D2BB2C0A1F681828007ABA09 /* SettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB2C081F681828007ABA09 /* SettingController.m */; };
+		D2BB2C0B1F681828007ABA09 /* SettingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2BB2C091F681828007ABA09 /* SettingController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,15 +33,18 @@
 		AC12E01D1F66CE10008C4C03 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AC12E01F1F66CE10008C4C03 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AC12E0201F66CE10008C4C03 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AC12E0221F66CE10008C4C03 /* MainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
-		AC12E0231F66CE10008C4C03 /* MainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
-		AC12E0261F66CE10008C4C03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC12E0281F66CE10008C4C03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC12E02B1F66CE10008C4C03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC12E02D1F66CE10008C4C03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC12E0321F66CE10008C4C03 /* ClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC12E0361F66CE10008C4C03 /* ClockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClockTests.m; sourceTree = "<group>"; };
 		AC12E0381F66CE10008C4C03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2BB2BFC1F681670007ABA09 /* IndexController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexController.h; sourceTree = "<group>"; };
+		D2BB2BFD1F681670007ABA09 /* IndexController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexController.m; sourceTree = "<group>"; };
+		D2BB2BFE1F681670007ABA09 /* IndexController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IndexController.xib; sourceTree = "<group>"; };
+		D2BB2C071F681828007ABA09 /* SettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingController.h; sourceTree = "<group>"; };
+		D2BB2C081F681828007ABA09 /* SettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingController.m; sourceTree = "<group>"; };
+		D2BB2C091F681828007ABA09 /* SettingController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +86,10 @@
 		AC12E01B1F66CE10008C4C03 /* Clock */ = {
 			isa = PBXGroup;
 			children = (
+				D2BB2C061F681828007ABA09 /* setting */,
+				D2BB2BFB1F681670007ABA09 /* index */,
 				AC12E01F1F66CE10008C4C03 /* AppDelegate.h */,
 				AC12E0201F66CE10008C4C03 /* AppDelegate.m */,
-				AC12E0221F66CE10008C4C03 /* MainController.h */,
-				AC12E0231F66CE10008C4C03 /* MainController.m */,
-				AC12E0251F66CE10008C4C03 /* Main.storyboard */,
 				AC12E0281F66CE10008C4C03 /* Assets.xcassets */,
 				AC12E02A1F66CE10008C4C03 /* LaunchScreen.storyboard */,
 				AC12E02D1F66CE10008C4C03 /* Info.plist */,
@@ -109,6 +113,26 @@
 				AC12E0381F66CE10008C4C03 /* Info.plist */,
 			);
 			path = ClockTests;
+			sourceTree = "<group>";
+		};
+		D2BB2BFB1F681670007ABA09 /* index */ = {
+			isa = PBXGroup;
+			children = (
+				D2BB2BFC1F681670007ABA09 /* IndexController.h */,
+				D2BB2BFD1F681670007ABA09 /* IndexController.m */,
+				D2BB2BFE1F681670007ABA09 /* IndexController.xib */,
+			);
+			path = index;
+			sourceTree = "<group>";
+		};
+		D2BB2C061F681828007ABA09 /* setting */ = {
+			isa = PBXGroup;
+			children = (
+				D2BB2C071F681828007ABA09 /* SettingController.h */,
+				D2BB2C081F681828007ABA09 /* SettingController.m */,
+				D2BB2C091F681828007ABA09 /* SettingController.xib */,
+			);
+			path = setting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,9 +219,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2BB2C0B1F681828007ABA09 /* SettingController.xib in Resources */,
+				D2BB2C001F681670007ABA09 /* IndexController.xib in Resources */,
 				AC12E02C1F66CE10008C4C03 /* LaunchScreen.storyboard in Resources */,
 				AC12E0291F66CE10008C4C03 /* Assets.xcassets in Resources */,
-				AC12E0271F66CE10008C4C03 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,8 +240,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC12E0241F66CE10008C4C03 /* MainController.m in Sources */,
+				D2BB2BFF1F681670007ABA09 /* IndexController.m in Sources */,
 				AC12E0211F66CE10008C4C03 /* AppDelegate.m in Sources */,
+				D2BB2C0A1F681828007ABA09 /* SettingController.m in Sources */,
 				AC12E01E1F66CE10008C4C03 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,14 +266,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AC12E0251F66CE10008C4C03 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AC12E0261F66CE10008C4C03 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AC12E02A1F66CE10008C4C03 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -420,6 +438,7 @@
 				AC12E03D1F66CE10008C4C03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC12E03E1F66CE10008C4C03 /* Build configuration list for PBXNativeTarget "ClockTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +447,7 @@
 				AC12E0401F66CE10008C4C03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

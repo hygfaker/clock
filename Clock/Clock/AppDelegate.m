@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "IndexController.h"
+#import "SettingController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +17,22 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    
+    IndexController *index = [[IndexController alloc] init];
+    UINavigationController *navIndex = [[UINavigationController alloc] initWithRootViewController:index];
+    
+    SettingController *setting = [[SettingController alloc] init];
+    UINavigationController *navSetting = [[UINavigationController alloc] initWithRootViewController:setting];
+    
+    tabBarController.viewControllers = [NSArray arrayWithObjects:navIndex, navSetting, nil];
+
+    self.window = [[UIWindow alloc]init];
+    self.window.frame = [UIScreen mainScreen].bounds;
+    [self.window setRootViewController:tabBarController];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

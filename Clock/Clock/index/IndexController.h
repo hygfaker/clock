@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  IndexController.h
 //  Clock
 //
-//  Created by YAN on 2017/9/11.
+//  Created by yans67 on 2017/9/12.
 //  Copyright © 2017年 minstone. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface MainController : UIViewController
-
+@interface IndexController : UIViewController
 
 @end
-
