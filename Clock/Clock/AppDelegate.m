@@ -9,7 +9,17 @@
 #import "AppDelegate.h"
 #import "IndexController.h"
 #import "SettingController.h"
-@interface AppDelegate ()
+#ifdef NSFoundationVersionNumber_iOS_9_x_Max  // 防止低版本找不到本地通知而报错
+#import <UserNotifications/UserNotifications.h>
+#endif
+
+#define IOS10_OR_LATER ([[[UIDevice currentDevice] systemVersion] floatValue] >= 10.0)
+#define IOS9_OR_LATER ([[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0)
+#define IOS8_OR_LATER ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
+#define IOS7_OR_LATER ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
+
+
+@interface AppDelegate ()<UNUserNotificationCenterDelegate>
 
 @end
 
@@ -33,9 +43,47 @@
     [self.window setRootViewController:tabBarController];
     [self.window makeKeyAndVisible];
     
+    
+    // 注册通知
+    [self replyPushNotificationAuthorization:application];
+    return YES;
+    
     return YES;
 }
 
+#pragma mark - 申请通知权限
+// 申请通知权限
+- (void)replyPushNotificationAuthorization:(UIApplication *)application{
+    
+    if (IOS10_OR_LATER) {
+        //iOS 10 later
+        UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+        //必须写代理，不然无法监听通知的接收与点击事件
+        center.delegate = self;
+        [center requestAuthorizationWithOptions:(UNAuthorizationOptionBadge | UNAuthorizationOptionSound | UNAuthorizationOptionAlert) completionHandler:^(BOOL granted, NSError * _Nullable error) {
+            if (!error && granted) {//用户点击允许
+                NSLog(@"注册成功");
+            }else{//用户点击不允许
+                NSLog(@"注册失败");
+            }
+        }];
+        // 可以通过 getNotificationSettingsWithCompletionHandler 获取权限设置
+        // 之前注册推送服务，用户点击了同意还是不同意，以及用户之后又做了怎样的更改我们都无从得知，现在 apple 开放了这个 API，我们可以直接获取到用户的设定信息了。注意UNNotificationSettings是只读对象哦，不能直接修改！
+        [center getNotificationSettingsWithCompletionHandler:^(UNNotificationSettings * _Nonnull settings) {
+            NSLog(@"========%@",settings);
+        }];
+    }else if (IOS8_OR_LATER){
+        //iOS 8 - iOS 10系统
+        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert | UIUserNotificationTypeBadge | UIUserNotificationTypeSound categories:nil];
+        [application registerUserNotificationSettings:settings];
+    }else{
+        //iOS 8.0系统以下
+        [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeSound];
+    }
+    
+    //注册远端消息通知获取device token
+    [application registerForRemoteNotifications];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
