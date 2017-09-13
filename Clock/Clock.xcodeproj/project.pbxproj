@@ -18,6 +18,11 @@
 		D2BB2C001F681670007ABA09 /* IndexController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2BB2BFE1F681670007ABA09 /* IndexController.xib */; };
 		D2BB2C0A1F681828007ABA09 /* SettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB2C081F681828007ABA09 /* SettingController.m */; };
 		D2BB2C0B1F681828007ABA09 /* SettingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2BB2C091F681828007ABA09 /* SettingController.xib */; };
+		D2BB2C131F68E45F007ABA09 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2BB2C121F68E45F007ABA09 /* UserNotifications.framework */; };
+		D2BB2C151F68E45F007ABA09 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2BB2C141F68E45F007ABA09 /* UserNotificationsUI.framework */; };
+		D2BB2C191F68E45F007ABA09 /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB2C181F68E45F007ABA09 /* NotificationViewController.m */; };
+		D2BB2C1C1F68E45F007ABA09 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2BB2C1A1F68E45F007ABA09 /* MainInterface.storyboard */; };
+		D2BB2C201F68E45F007ABA09 /* Notifiction.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D2BB2C101F68E45F007ABA09 /* Notifiction.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +33,28 @@
 			remoteGlobalIDString = AC12E0181F66CE10008C4C03;
 			remoteInfo = Clock;
 		};
+		D2BB2C1E1F68E45F007ABA09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC12E0111F66CE10008C4C03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2BB2C0F1F68E45F007ABA09;
+			remoteInfo = Notifiction;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D2BB2C241F68E45F007ABA09 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D2BB2C201F68E45F007ABA09 /* Notifiction.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AC12E0191F66CE10008C4C03 /* Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clock.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +76,13 @@
 		D2BB2C071F681828007ABA09 /* SettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingController.h; sourceTree = "<group>"; };
 		D2BB2C081F681828007ABA09 /* SettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingController.m; sourceTree = "<group>"; };
 		D2BB2C091F681828007ABA09 /* SettingController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingController.xib; sourceTree = "<group>"; };
+		D2BB2C101F68E45F007ABA09 /* Notifiction.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Notifiction.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2BB2C121F68E45F007ABA09 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		D2BB2C141F68E45F007ABA09 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		D2BB2C171F68E45F007ABA09 /* NotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationViewController.h; sourceTree = "<group>"; };
+		D2BB2C181F68E45F007ABA09 /* NotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationViewController.m; sourceTree = "<group>"; };
+		D2BB2C1B1F68E45F007ABA09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		D2BB2C1D1F68E45F007ABA09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +100,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D2BB2C0D1F68E45F007ABA09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2BB2C151F68E45F007ABA09 /* UserNotificationsUI.framework in Frameworks */,
+				D2BB2C131F68E45F007ABA09 /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -75,6 +117,8 @@
 			children = (
 				AC12E01B1F66CE10008C4C03 /* Clock */,
 				AC12E0351F66CE10008C4C03 /* ClockTests */,
+				D2BB2C161F68E45F007ABA09 /* Notifiction */,
+				D2BB2C111F68E45F007ABA09 /* Frameworks */,
 				AC12E01A1F66CE10008C4C03 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,6 +128,7 @@
 			children = (
 				AC12E0191F66CE10008C4C03 /* Clock.app */,
 				AC12E0321F66CE10008C4C03 /* ClockTests.xctest */,
+				D2BB2C101F68E45F007ABA09 /* Notifiction.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,6 +197,26 @@
 			path = setting;
 			sourceTree = "<group>";
 		};
+		D2BB2C111F68E45F007ABA09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2BB2C121F68E45F007ABA09 /* UserNotifications.framework */,
+				D2BB2C141F68E45F007ABA09 /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2BB2C161F68E45F007ABA09 /* Notifiction */ = {
+			isa = PBXGroup;
+			children = (
+				D2BB2C171F68E45F007ABA09 /* NotificationViewController.h */,
+				D2BB2C181F68E45F007ABA09 /* NotificationViewController.m */,
+				D2BB2C1A1F68E45F007ABA09 /* MainInterface.storyboard */,
+				D2BB2C1D1F68E45F007ABA09 /* Info.plist */,
+			);
+			path = Notifiction;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -162,10 +227,12 @@
 				AC12E0151F66CE10008C4C03 /* Sources */,
 				AC12E0161F66CE10008C4C03 /* Frameworks */,
 				AC12E0171F66CE10008C4C03 /* Resources */,
+				D2BB2C241F68E45F007ABA09 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D2BB2C1F1F68E45F007ABA09 /* PBXTargetDependency */,
 			);
 			name = Clock;
 			productName = Clock;
@@ -190,6 +257,23 @@
 			productReference = AC12E0321F66CE10008C4C03 /* ClockTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		D2BB2C0F1F68E45F007ABA09 /* Notifiction */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2BB2C231F68E45F007ABA09 /* Build configuration list for PBXNativeTarget "Notifiction" */;
+			buildPhases = (
+				D2BB2C0C1F68E45F007ABA09 /* Sources */,
+				D2BB2C0D1F68E45F007ABA09 /* Frameworks */,
+				D2BB2C0E1F68E45F007ABA09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Notifiction;
+			productName = Notifiction;
+			productReference = D2BB2C101F68E45F007ABA09 /* Notifiction.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -210,6 +294,11 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = AC12E0181F66CE10008C4C03;
 					};
+					D2BB2C0F1F68E45F007ABA09 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = X75EPVXZ98;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = AC12E0141F66CE10008C4C03 /* Build configuration list for PBXProject "Clock" */;
@@ -227,6 +316,7 @@
 			targets = (
 				AC12E0181F66CE10008C4C03 /* Clock */,
 				AC12E0311F66CE10008C4C03 /* ClockTests */,
+				D2BB2C0F1F68E45F007ABA09 /* Notifiction */,
 			);
 		};
 /* End PBXProject section */
@@ -248,6 +338,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2BB2C0E1F68E45F007ABA09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2BB2C1C1F68E45F007ABA09 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +372,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D2BB2C0C1F68E45F007ABA09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2BB2C191F68E45F007ABA09 /* NotificationViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -281,6 +387,11 @@
 			isa = PBXTargetDependency;
 			target = AC12E0181F66CE10008C4C03 /* Clock */;
 			targetProxy = AC12E0331F66CE10008C4C03 /* PBXContainerItemProxy */;
+		};
+		D2BB2C1F1F68E45F007ABA09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2BB2C0F1F68E45F007ABA09 /* Notifiction */;
+			targetProxy = D2BB2C1E1F68E45F007ABA09 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -291,6 +402,14 @@
 				AC12E02B1F66CE10008C4C03 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D2BB2C1A1F68E45F007ABA09 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2BB2C1B1F68E45F007ABA09 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -440,6 +559,30 @@
 			};
 			name = Release;
 		};
+		D2BB2C211F68E45F007ABA09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = X75EPVXZ98;
+				INFOPLIST_FILE = Notifiction/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huangyg.Clock.Notifiction;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D2BB2C221F68E45F007ABA09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = X75EPVXZ98;
+				INFOPLIST_FILE = Notifiction/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huangyg.Clock.Notifiction;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -469,6 +612,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		D2BB2C231F68E45F007ABA09 /* Build configuration list for PBXNativeTarget "Notifiction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2BB2C211F68E45F007ABA09 /* Debug */,
+				D2BB2C221F68E45F007ABA09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

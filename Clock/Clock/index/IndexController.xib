@@ -25,11 +25,20 @@
                     <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZqT-4g-Lnk">
+                    <rect key="frame" x="138" y="354" width="98" height="30"/>
+                    <state key="normal" title="5s 后本地推送"/>
+                    <connections>
+                        <action selector="clickLocalPush:" destination="-1" eventType="touchUpInside" id="Ksv-hC-v7V"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="ZqT-4g-Lnk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2gV-r3-42s"/>
                 <constraint firstItem="Bk8-qn-Dso" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="3GU-XF-ag6"/>
                 <constraint firstItem="Bk8-qn-Dso" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="SXV-X4-PGn"/>
+                <constraint firstItem="ZqT-4g-Lnk" firstAttribute="top" secondItem="Bk8-qn-Dso" secondAttribute="bottom" constant="10" id="elo-GK-bui"/>
             </constraints>
         </view>
     </objects>
