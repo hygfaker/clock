@@ -8,6 +8,7 @@
 //  首页
 #import "IndexController.h"
 #import "ClockInfoController.h"
+#import "WallpaperController.h"
 #import <UserNotifications/UserNotifications.h>
 @interface IndexController ()
 
@@ -26,16 +27,16 @@
 
 #pragma mark - 添加导航栏两边按钮
 - (void)addNavItem {
-    UIBarButtonItem* leftButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(clickEdit)];
-    UIBarButtonItem* rightButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(clickAdd)];
+    UIBarButtonItem *leftButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(clickEdit)];
+    UIBarButtonItem *rightButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(clickAdd)];
     
     self.navigationItem.leftBarButtonItem = leftButtonItem;
     self.navigationItem.rightBarButtonItem = rightButtonItem;
 }
 
-
 - (void)clickEdit {
-    
+    WallpaperController *wallpaper = [WallpaperController new];
+    [self.navigationController presentViewController:wallpaper animated:YES completion:nil];
 }
 
 - (IBAction)clickLocalPush:(UIButton *)sender {
