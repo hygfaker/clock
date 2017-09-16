@@ -12,17 +12,13 @@
 		AC12E0291F66CE10008C4C03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC12E0281F66CE10008C4C03 /* Assets.xcassets */; };
 		AC12E02C1F66CE10008C4C03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC12E02A1F66CE10008C4C03 /* LaunchScreen.storyboard */; };
 		AC12E0371F66CE10008C4C03 /* ClockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC12E0361F66CE10008C4C03 /* ClockTests.m */; };
-		AC2AD6071F68427B005367D1 /* ClockInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2AD6051F68427B005367D1 /* ClockInfoController.m */; };
-		AC2AD6081F68427B005367D1 /* ClockInfoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC2AD6061F68427B005367D1 /* ClockInfoController.xib */; };
+		ACCC6F081F6ACF6300984215 /* NotificationHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCC6F071F6ACF6300984215 /* NotificationHandle.m */; };
+		ACCC6F271F6D726700984215 /* ClockInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCC6F241F6D726700984215 /* ClockInfoController.m */; };
+		ACCC6F281F6D726700984215 /* ClockInfoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACCC6F251F6D726700984215 /* ClockInfoController.xib */; };
 		D2BB2BFF1F681670007ABA09 /* IndexController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB2BFD1F681670007ABA09 /* IndexController.m */; };
 		D2BB2C001F681670007ABA09 /* IndexController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2BB2BFE1F681670007ABA09 /* IndexController.xib */; };
 		D2BB2C0A1F681828007ABA09 /* SettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB2C081F681828007ABA09 /* SettingController.m */; };
 		D2BB2C0B1F681828007ABA09 /* SettingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2BB2C091F681828007ABA09 /* SettingController.xib */; };
-		D2BB2C131F68E45F007ABA09 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2BB2C121F68E45F007ABA09 /* UserNotifications.framework */; };
-		D2BB2C151F68E45F007ABA09 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2BB2C141F68E45F007ABA09 /* UserNotificationsUI.framework */; };
-		D2BB2C191F68E45F007ABA09 /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB2C181F68E45F007ABA09 /* NotificationViewController.m */; };
-		D2BB2C1C1F68E45F007ABA09 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2BB2C1A1F68E45F007ABA09 /* MainInterface.storyboard */; };
-		D2BB2C201F68E45F007ABA09 /* Notifiction.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D2BB2C101F68E45F007ABA09 /* Notifiction.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,13 +29,6 @@
 			remoteGlobalIDString = AC12E0181F66CE10008C4C03;
 			remoteInfo = Clock;
 		};
-		D2BB2C1E1F68E45F007ABA09 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AC12E0111F66CE10008C4C03 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D2BB2C0F1F68E45F007ABA09;
-			remoteInfo = Notifiction;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,7 +38,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				D2BB2C201F68E45F007ABA09 /* Notifiction.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,16 +55,19 @@
 		AC12E0321F66CE10008C4C03 /* ClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC12E0361F66CE10008C4C03 /* ClockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClockTests.m; sourceTree = "<group>"; };
 		AC12E0381F66CE10008C4C03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC2AD6041F68427B005367D1 /* ClockInfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClockInfoController.h; path = Clock/clock/ClockInfoController.h; sourceTree = SOURCE_ROOT; };
-		AC2AD6051F68427B005367D1 /* ClockInfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClockInfoController.m; path = Clock/clock/ClockInfoController.m; sourceTree = SOURCE_ROOT; };
-		AC2AD6061F68427B005367D1 /* ClockInfoController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ClockInfoController.xib; path = Clock/clock/ClockInfoController.xib; sourceTree = SOURCE_ROOT; };
+		AC2AD60A1F6ACE0D005367D1 /* Clock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Clock.entitlements; sourceTree = "<group>"; };
+		ACCC6F051F6ACF0700984215 /* Notifiction.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Notifiction.entitlements; sourceTree = "<group>"; };
+		ACCC6F061F6ACF6300984215 /* NotificationHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NotificationHandle.h; path = public/handle/NotificationHandle.h; sourceTree = "<group>"; };
+		ACCC6F071F6ACF6300984215 /* NotificationHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NotificationHandle.m; path = public/handle/NotificationHandle.m; sourceTree = "<group>"; };
+		ACCC6F231F6D726700984215 /* ClockInfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockInfoController.h; sourceTree = "<group>"; };
+		ACCC6F241F6D726700984215 /* ClockInfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockInfoController.m; sourceTree = "<group>"; };
+		ACCC6F251F6D726700984215 /* ClockInfoController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClockInfoController.xib; sourceTree = "<group>"; };
 		D2BB2BFC1F681670007ABA09 /* IndexController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexController.h; sourceTree = "<group>"; };
 		D2BB2BFD1F681670007ABA09 /* IndexController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexController.m; sourceTree = "<group>"; };
 		D2BB2BFE1F681670007ABA09 /* IndexController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IndexController.xib; sourceTree = "<group>"; };
 		D2BB2C071F681828007ABA09 /* SettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingController.h; sourceTree = "<group>"; };
 		D2BB2C081F681828007ABA09 /* SettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingController.m; sourceTree = "<group>"; };
 		D2BB2C091F681828007ABA09 /* SettingController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingController.xib; sourceTree = "<group>"; };
-		D2BB2C101F68E45F007ABA09 /* Notifiction.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Notifiction.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2BB2C121F68E45F007ABA09 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		D2BB2C141F68E45F007ABA09 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
 		D2BB2C171F68E45F007ABA09 /* NotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationViewController.h; sourceTree = "<group>"; };
@@ -100,15 +91,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D2BB2C0D1F68E45F007ABA09 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D2BB2C151F68E45F007ABA09 /* UserNotificationsUI.framework in Frameworks */,
-				D2BB2C131F68E45F007ABA09 /* UserNotifications.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -128,7 +110,6 @@
 			children = (
 				AC12E0191F66CE10008C4C03 /* Clock.app */,
 				AC12E0321F66CE10008C4C03 /* ClockTests.xctest */,
-				D2BB2C101F68E45F007ABA09 /* Notifiction.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,7 +117,8 @@
 		AC12E01B1F66CE10008C4C03 /* Clock */ = {
 			isa = PBXGroup;
 			children = (
-				AC2AD6091F684280005367D1 /* clock */,
+				ACCC6F211F6D726700984215 /* clock */,
+				ACCC6F0A1F6ACF7000984215 /* public */,
 				D2BB2C061F681828007ABA09 /* setting */,
 				D2BB2BFB1F681670007ABA09 /* index */,
 				AC12E01F1F66CE10008C4C03 /* AppDelegate.h */,
@@ -144,6 +126,7 @@
 				AC12E0281F66CE10008C4C03 /* Assets.xcassets */,
 				AC12E02A1F66CE10008C4C03 /* LaunchScreen.storyboard */,
 				AC12E02D1F66CE10008C4C03 /* Info.plist */,
+				AC2AD60A1F6ACE0D005367D1 /* Clock.entitlements */,
 				AC12E01C1F66CE10008C4C03 /* Supporting Files */,
 			);
 			path = Clock;
@@ -166,15 +149,47 @@
 			path = ClockTests;
 			sourceTree = "<group>";
 		};
-		AC2AD6091F684280005367D1 /* clock */ = {
+		ACCC6F091F6ACF6800984215 /* handle */ = {
 			isa = PBXGroup;
 			children = (
-				AC2AD6041F68427B005367D1 /* ClockInfoController.h */,
-				AC2AD6051F68427B005367D1 /* ClockInfoController.m */,
-				AC2AD6061F68427B005367D1 /* ClockInfoController.xib */,
+				ACCC6F061F6ACF6300984215 /* NotificationHandle.h */,
+				ACCC6F071F6ACF6300984215 /* NotificationHandle.m */,
 			);
-			name = clock;
-			path = index;
+			name = handle;
+			sourceTree = "<group>";
+		};
+		ACCC6F0A1F6ACF7000984215 /* public */ = {
+			isa = PBXGroup;
+			children = (
+				ACCC6F091F6ACF6800984215 /* handle */,
+			);
+			name = public;
+			sourceTree = "<group>";
+		};
+		ACCC6F211F6D726700984215 /* clock */ = {
+			isa = PBXGroup;
+			children = (
+				ACCC6F221F6D726700984215 /* addClock */,
+				ACCC6F261F6D726700984215 /* wallpaper */,
+			);
+			path = clock;
+			sourceTree = "<group>";
+		};
+		ACCC6F221F6D726700984215 /* addClock */ = {
+			isa = PBXGroup;
+			children = (
+				ACCC6F231F6D726700984215 /* ClockInfoController.h */,
+				ACCC6F241F6D726700984215 /* ClockInfoController.m */,
+				ACCC6F251F6D726700984215 /* ClockInfoController.xib */,
+			);
+			path = addClock;
+			sourceTree = "<group>";
+		};
+		ACCC6F261F6D726700984215 /* wallpaper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = wallpaper;
 			sourceTree = "<group>";
 		};
 		D2BB2BFB1F681670007ABA09 /* index */ = {
@@ -209,6 +224,7 @@
 		D2BB2C161F68E45F007ABA09 /* Notifiction */ = {
 			isa = PBXGroup;
 			children = (
+				ACCC6F051F6ACF0700984215 /* Notifiction.entitlements */,
 				D2BB2C171F68E45F007ABA09 /* NotificationViewController.h */,
 				D2BB2C181F68E45F007ABA09 /* NotificationViewController.m */,
 				D2BB2C1A1F68E45F007ABA09 /* MainInterface.storyboard */,
@@ -232,7 +248,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				D2BB2C1F1F68E45F007ABA09 /* PBXTargetDependency */,
 			);
 			name = Clock;
 			productName = Clock;
@@ -257,23 +272,6 @@
 			productReference = AC12E0321F66CE10008C4C03 /* ClockTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D2BB2C0F1F68E45F007ABA09 /* Notifiction */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D2BB2C231F68E45F007ABA09 /* Build configuration list for PBXNativeTarget "Notifiction" */;
-			buildPhases = (
-				D2BB2C0C1F68E45F007ABA09 /* Sources */,
-				D2BB2C0D1F68E45F007ABA09 /* Frameworks */,
-				D2BB2C0E1F68E45F007ABA09 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Notifiction;
-			productName = Notifiction;
-			productReference = D2BB2C101F68E45F007ABA09 /* Notifiction.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -286,18 +284,18 @@
 					AC12E0181F66CE10008C4C03 = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = X75EPVXZ98;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					AC12E0311F66CE10008C4C03 = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = X75EPVXZ98;
 						ProvisioningStyle = Automatic;
 						TestTargetID = AC12E0181F66CE10008C4C03;
-					};
-					D2BB2C0F1F68E45F007ABA09 = {
-						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = X75EPVXZ98;
-						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -316,7 +314,6 @@
 			targets = (
 				AC12E0181F66CE10008C4C03 /* Clock */,
 				AC12E0311F66CE10008C4C03 /* ClockTests */,
-				D2BB2C0F1F68E45F007ABA09 /* Notifiction */,
 			);
 		};
 /* End PBXProject section */
@@ -327,7 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2BB2C0B1F681828007ABA09 /* SettingController.xib in Resources */,
-				AC2AD6081F68427B005367D1 /* ClockInfoController.xib in Resources */,
+				ACCC6F281F6D726700984215 /* ClockInfoController.xib in Resources */,
 				D2BB2C001F681670007ABA09 /* IndexController.xib in Resources */,
 				AC12E02C1F66CE10008C4C03 /* LaunchScreen.storyboard in Resources */,
 				AC12E0291F66CE10008C4C03 /* Assets.xcassets in Resources */,
@@ -341,14 +338,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D2BB2C0E1F68E45F007ABA09 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D2BB2C1C1F68E45F007ABA09 /* MainInterface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -356,11 +345,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACCC6F081F6ACF6300984215 /* NotificationHandle.m in Sources */,
 				D2BB2BFF1F681670007ABA09 /* IndexController.m in Sources */,
 				AC12E0211F66CE10008C4C03 /* AppDelegate.m in Sources */,
 				D2BB2C0A1F681828007ABA09 /* SettingController.m in Sources */,
+				ACCC6F271F6D726700984215 /* ClockInfoController.m in Sources */,
 				AC12E01E1F66CE10008C4C03 /* main.m in Sources */,
-				AC2AD6071F68427B005367D1 /* ClockInfoController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,14 +362,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D2BB2C0C1F68E45F007ABA09 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D2BB2C191F68E45F007ABA09 /* NotificationViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -387,11 +369,6 @@
 			isa = PBXTargetDependency;
 			target = AC12E0181F66CE10008C4C03 /* Clock */;
 			targetProxy = AC12E0331F66CE10008C4C03 /* PBXContainerItemProxy */;
-		};
-		D2BB2C1F1F68E45F007ABA09 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D2BB2C0F1F68E45F007ABA09 /* Notifiction */;
-			targetProxy = D2BB2C1E1F68E45F007ABA09 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -511,12 +488,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Clock/Clock.entitlements;
 				DEVELOPMENT_TEAM = X75EPVXZ98;
 				INFOPLIST_FILE = Clock/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.huangyg.Clock;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.minstone.FreeOA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f2845a34-6d9a-481e-8b0f-1fdd953934b3";
+				PROVISIONING_PROFILE_SPECIFIER = FreeOA_Development;
 			};
 			name = Debug;
 		};
@@ -524,12 +504,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Clock/Clock.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = X75EPVXZ98;
 				INFOPLIST_FILE = Clock/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.huangyg.Clock;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.minstone.FreeOA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1aacca25-b871-4106-9a03-5c4439834aa8";
+				PROVISIONING_PROFILE_SPECIFIER = FreeOA_Distribution;
 			};
 			name = Release;
 		};
@@ -556,30 +540,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.huangyg.ClockTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clock.app/Clock";
-			};
-			name = Release;
-		};
-		D2BB2C211F68E45F007ABA09 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = X75EPVXZ98;
-				INFOPLIST_FILE = Notifiction/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.huangyg.Clock.Notifiction;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		D2BB2C221F68E45F007ABA09 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = X75EPVXZ98;
-				INFOPLIST_FILE = Notifiction/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.huangyg.Clock.Notifiction;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -612,14 +572,6 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
-		};
-		D2BB2C231F68E45F007ABA09 /* Build configuration list for PBXNativeTarget "Notifiction" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D2BB2C211F68E45F007ABA09 /* Debug */,
-				D2BB2C221F68E45F007ABA09 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

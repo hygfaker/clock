@@ -5,7 +5,7 @@
 //  Created by YAN on 2017/9/13.
 //  Copyright © 2017年 minstone. All rights reserved.
 //
-
+//  添加闹钟页面
 #import "ClockInfoController.h"
 
 @interface ClockInfoController ()
