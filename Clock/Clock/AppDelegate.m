@@ -35,9 +35,10 @@
     UINavigationController *navIndex = [[UINavigationController alloc] initWithRootViewController:index];
     
     SettingController *setting = [[SettingController alloc] init];
-    UINavigationController *navSetting = [[UINavigationController alloc] initWithRootViewController:setting];
+//    设置页面不需要导航栏
+//    UINavigationController *navSetting = [[UINavigationController alloc] initWithRootViewController:setting];
     
-    tabBarController.viewControllers = [NSArray arrayWithObjects:navIndex, navSetting, nil];
+    tabBarController.viewControllers = [NSArray arrayWithObjects:navIndex, setting, nil];
 
     self.window = [[UIWindow alloc]init];
     self.window.frame = [UIScreen mainScreen].bounds;

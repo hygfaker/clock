@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WallpaperController">
             <connections>
+                <outlet property="timeLab" destination="hpt-ZG-fdd" id="O47-rF-2Ng"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,11 +20,11 @@
             <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13:25" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpt-ZG-fdd">
-                    <rect key="frame" x="0.0" y="2" width="768" height="1024"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpt-ZG-fdd">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" type="system" pointSize="220"/>
-                    <color key="textColor" red="0.9786734533" green="0.9786734533" blue="0.9786734533" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.70993498086929319" green="0.18032981689646504" blue="0.2358218037530776" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                     <variation key="heightClass=compact-widthClass=regular">
                         <fontDescription key="fontDescription" type="system" pointSize="270"/>
@@ -38,8 +39,8 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="hpt-ZG-fdd" secondAttribute="bottom" constant="-2" id="BmA-d8-poE"/>
-                <constraint firstItem="hpt-ZG-fdd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="2" id="Dy1-fC-SbA"/>
+                <constraint firstAttribute="bottom" secondItem="hpt-ZG-fdd" secondAttribute="bottom" id="BmA-d8-poE"/>
+                <constraint firstItem="hpt-ZG-fdd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Dy1-fC-SbA"/>
                 <constraint firstItem="hpt-ZG-fdd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="czI-oE-3n6"/>
                 <constraint firstAttribute="trailing" secondItem="hpt-ZG-fdd" secondAttribute="trailing" id="kMo-SI-r1F"/>
             </constraints>

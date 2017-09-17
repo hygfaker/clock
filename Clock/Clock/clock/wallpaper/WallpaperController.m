@@ -10,37 +10,54 @@
 
 @interface WallpaperController ()
 
+@property (strong, nonatomic) IBOutlet UILabel *timeLab;
+@property (assign, nonatomic) float brightness;
 @end
 
 @implementation WallpaperController
 
-- (instancetype)init {
-    self = [super init];
-    if (self) {
-        self.title = @"添加";
-        [self addNavItem];
-    }
-    return self;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    [self updateTime];
+    
+    //定时器 反复执行
+    NSTimer *timer = [NSTimer timerWithTimeInterval:1.0 target:self selector:@selector(updateTime) userInfo:nil repeats:YES];
+    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(dismissController)];
+    [self.view addGestureRecognizer:tap];
+    
+    
+    // 设置屏幕常亮，默认是NO。亮度范围是0.1 - 1.0
+    [UIApplication sharedApplication].idleTimerDisabled = YES;
+//    [[UIScreen mainScreen] setBrightness: 0.5];
+    
 }
 
-#pragma mark - 添加导航栏两边按钮
-- (void)addNavItem {
-    UIBarButtonItem* leftButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(clickCancle)];
-    UIBarButtonItem* rightButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(clickSave)];
-    
-    self.navigationItem.leftBarButtonItem = leftButtonItem;
-    self.navigationItem.rightBarButtonItem = rightButtonItem;
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    // 获取屏幕亮度
+    self.brightness = [UIScreen mainScreen].brightness;
 }
 
-- (void)clickCancle {
-    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+- (void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+    // 恢复屏幕亮度
+    [UIScreen mainScreen].brightness = self.brightness;
 }
-- (void)clickSave {
-    
+
+- (void)updateTime{
+    NSDate *currentDate = [NSDate date];
+    NSDateFormatter *dataFormatter = [[NSDateFormatter alloc]init];
+    [dataFormatter setDateFormat:@"HH:mm"];
+    NSString *dateString = [dataFormatter stringFromDate:currentDate];
+    self.timeLab.text = dateString;
+}
+
+- (void)dismissController{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -36,6 +36,7 @@
 
 - (void)clickEdit {
     WallpaperController *wallpaper = [WallpaperController new];
+    wallpaper.modalTransitionStyle = UIModalTransitionStylePartialCurl;
     [self.navigationController presentViewController:wallpaper animated:YES completion:nil];
 }
 
