@@ -8,8 +8,11 @@
 //  添加闹钟页面
 #import "ClockInfoController.h"
 
-@interface ClockInfoController ()
-
+@interface ClockInfoController ()<UITableViewDelegate,UITableViewDataSource>
+@property (strong, nonatomic) IBOutlet UIDatePicker *timeEdit;
+@property (strong, nonatomic) IBOutlet UITableView *configTable;
+/** configTable数据*/
+@property(strong , nonatomic) NSMutableArray *configArr;
 @end
 
 @implementation ClockInfoController
@@ -25,7 +28,33 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _configTable.dataSource = self;
+    _configTable.delegate = self;
+   
+    self.configArr = [NSMutableArray arrayWithObjects:@"重复",@"名称",@"模式",@"响应", nil];
 }
+
+
+#pragma mark - Table view data source
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.configArr.count;
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"];
+    if (cell) {
+        cell.textLabel.text = self.configArr[indexPath.row];
+        cell.detailTextLabel.text = self.configArr[indexPath.row];
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    }
+    return cell;
+}
+
 
 #pragma mark - 添加导航栏两边按钮
 - (void)addNavItem {
@@ -40,7 +69,7 @@
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
 - (void)clickSave {
-    
+    NSLog(@"%@",self.timeEdit.date);
 }
 
 - (void)didReceiveMemoryWarning {
