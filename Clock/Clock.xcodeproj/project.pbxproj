@@ -12,6 +12,8 @@
 		AC12E0291F66CE10008C4C03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC12E0281F66CE10008C4C03 /* Assets.xcassets */; };
 		AC12E02C1F66CE10008C4C03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC12E02A1F66CE10008C4C03 /* LaunchScreen.storyboard */; };
 		AC12E0371F66CE10008C4C03 /* ClockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC12E0361F66CE10008C4C03 /* ClockTests.m */; };
+		AC98D8921F70279600530AB1 /* RepeatController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC98D8901F70279600530AB1 /* RepeatController.m */; };
+		AC98D8931F70279600530AB1 /* RepeatController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC98D8911F70279600530AB1 /* RepeatController.xib */; };
 		ACCC6F081F6ACF6300984215 /* NotificationHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCC6F071F6ACF6300984215 /* NotificationHandle.m */; };
 		ACCC6F271F6D726700984215 /* ClockInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCC6F241F6D726700984215 /* ClockInfoController.m */; };
 		ACCC6F281F6D726700984215 /* ClockInfoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACCC6F251F6D726700984215 /* ClockInfoController.xib */; };
@@ -58,6 +60,9 @@
 		AC12E0361F66CE10008C4C03 /* ClockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClockTests.m; sourceTree = "<group>"; };
 		AC12E0381F66CE10008C4C03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC2AD60A1F6ACE0D005367D1 /* Clock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Clock.entitlements; sourceTree = "<group>"; };
+		AC98D88F1F70279600530AB1 /* RepeatController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepeatController.h; sourceTree = "<group>"; };
+		AC98D8901F70279600530AB1 /* RepeatController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepeatController.m; sourceTree = "<group>"; };
+		AC98D8911F70279600530AB1 /* RepeatController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RepeatController.xib; sourceTree = "<group>"; };
 		ACCC6F051F6ACF0700984215 /* Notifiction.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Notifiction.entitlements; sourceTree = "<group>"; };
 		ACCC6F061F6ACF6300984215 /* NotificationHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NotificationHandle.h; path = public/handle/NotificationHandle.h; sourceTree = "<group>"; };
 		ACCC6F071F6ACF6300984215 /* NotificationHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NotificationHandle.m; path = public/handle/NotificationHandle.m; sourceTree = "<group>"; };
@@ -186,6 +191,9 @@
 				ACCC6F231F6D726700984215 /* ClockInfoController.h */,
 				ACCC6F241F6D726700984215 /* ClockInfoController.m */,
 				ACCC6F251F6D726700984215 /* ClockInfoController.xib */,
+				AC98D88F1F70279600530AB1 /* RepeatController.h */,
+				AC98D8901F70279600530AB1 /* RepeatController.m */,
+				AC98D8911F70279600530AB1 /* RepeatController.xib */,
 			);
 			path = addClock;
 			sourceTree = "<group>";
@@ -334,6 +342,7 @@
 				ACCC6F2D1F6D768B00984215 /* WallpaperController.xib in Resources */,
 				D2BB2C0B1F681828007ABA09 /* SettingController.xib in Resources */,
 				ACCC6F281F6D726700984215 /* ClockInfoController.xib in Resources */,
+				AC98D8931F70279600530AB1 /* RepeatController.xib in Resources */,
 				D2BB2C001F681670007ABA09 /* IndexController.xib in Resources */,
 				AC12E02C1F66CE10008C4C03 /* LaunchScreen.storyboard in Resources */,
 				AC12E0291F66CE10008C4C03 /* Assets.xcassets in Resources */,
@@ -356,6 +365,7 @@
 			files = (
 				ACCC6F081F6ACF6300984215 /* NotificationHandle.m in Sources */,
 				D2BB2BFF1F681670007ABA09 /* IndexController.m in Sources */,
+				AC98D8921F70279600530AB1 /* RepeatController.m in Sources */,
 				AC12E0211F66CE10008C4C03 /* AppDelegate.m in Sources */,
 				D2BB2C0A1F681828007ABA09 /* SettingController.m in Sources */,
 				ACCC6F271F6D726700984215 /* ClockInfoController.m in Sources */,

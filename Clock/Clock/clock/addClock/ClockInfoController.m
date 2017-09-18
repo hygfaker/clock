@@ -7,7 +7,7 @@
 //
 //  添加闹钟页面
 #import "ClockInfoController.h"
-
+#import "RepeatController.h"
 @interface ClockInfoController ()<UITableViewDelegate,UITableViewDataSource>
 @property (strong, nonatomic) IBOutlet UIDatePicker *timeEdit;
 @property (strong, nonatomic) IBOutlet UITableView *configTable;
@@ -54,7 +54,33 @@
     }
     return cell;
 }
-
+#pragma mark - 点击 cell
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    switch (indexPath.row) {
+        case 0:{
+            RepeatController *repeat = [RepeatController new];
+            [self.navigationController pushViewController:repeat animated:YES];
+            break;
+        }
+        case 1:{
+            RepeatController *repeat = [RepeatController new];
+            [self.navigationController pushViewController:repeat animated:YES];
+            break;
+        }
+        case 2:{
+            RepeatController *repeat = [RepeatController new];
+            [self.navigationController pushViewController:repeat animated:YES];
+            break;
+        }
+        case 3:{
+            RepeatController *repeat = [RepeatController new];
+            [self.navigationController pushViewController:repeat animated:YES];
+            break;
+        }
+        default:
+            break;
+    }
+}
 
 #pragma mark - 添加导航栏两边按钮
 - (void)addNavItem {
