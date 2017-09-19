@@ -31,7 +31,7 @@
     _configTable.dataSource = self;
     _configTable.delegate = self;
    
-    self.configArr = [NSMutableArray arrayWithObjects:@"重复",@"名称",@"模式",@"响应", nil];
+    _configArr = [NSMutableArray arrayWithObjects:@"重复",@"名称",@"模式",@"响应", nil];
 }
 
 
@@ -41,7 +41,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.configArr.count;
+    return _configArr.count;
 }
 
 
@@ -49,7 +49,7 @@
     UITableViewCell *cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"];
     if (cell) {
         cell.textLabel.text = self.configArr[indexPath.row];
-        cell.detailTextLabel.text = self.configArr[indexPath.row];
+        cell.detailTextLabel.text = _configArr[indexPath.row];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     return cell;

@@ -32,7 +32,7 @@
                 </datePicker>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" semanticContentAttribute="playback" verticalCompressionResistancePriority="751" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="1" allowsSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="W7a-Oo-IEi">
                     <rect key="frame" x="0.0" y="295" width="320" height="176"/>
-                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" red="0.1519162422" green="0.74865283090000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="176" id="N7i-Ak-CLk"/>
                     </constraints>

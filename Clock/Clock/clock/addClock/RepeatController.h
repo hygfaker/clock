@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RepeatController : UITableViewController
+@interface RepeatController : UIViewController
 
 @end
