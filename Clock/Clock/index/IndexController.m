@@ -34,12 +34,22 @@
     self.navigationItem.rightBarButtonItem = rightButtonItem;
 }
 
+#pragma mark - 导航栏左键，开启壁纸
 - (void)clickEdit {
     WallpaperController *wallpaper = [WallpaperController new];
     wallpaper.modalTransitionStyle = UIModalTransitionStylePartialCurl;
     [self.navigationController presentViewController:wallpaper animated:YES completion:nil];
 }
 
+#pragma mark - 导航栏右键，添加闹钟
+- (void)clickAdd{
+    // 模态视图是独立视图，需要重新设置 nav
+    ClockInfoController *clockInfo = [[ClockInfoController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:clockInfo];
+    [self.navigationController presentViewController:nav animated:YES completion:nil];
+}
+
+#pragma mark - 开启本地推送
 - (IBAction)clickLocalPush:(UIButton *)sender {
     [self createLocalizedUserNotification];
 }
@@ -78,13 +88,6 @@
     }];
 }
 
-
-- (void)clickAdd{
-    // 模态视图是独立视图，需要重新设置 nav
-    ClockInfoController *clockInfo = [[ClockInfoController alloc] init];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:clockInfo];
-    [self.navigationController presentViewController:nav animated:YES completion:nil];
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

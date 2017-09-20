@@ -35,9 +35,7 @@
     UINavigationController *navIndex = [[UINavigationController alloc] initWithRootViewController:index];
     
     SettingController *setting = [[SettingController alloc] init];
-//    设置页面不需要导航栏
 //    UINavigationController *navSetting = [[UINavigationController alloc] initWithRootViewController:setting];
-    
     tabBarController.viewControllers = [NSArray arrayWithObjects:navIndex, setting, nil];
 
     self.window = [[UIWindow alloc]init];
@@ -48,7 +46,6 @@
     
     // 使用 NotificationHandle 代理注册通知
     [UNUserNotificationCenter currentNotificationCenter].delegate = [NotificationHandle shareInstance];
-    
     [[NotificationHandle shareInstance] authorizationPushNotificaton:application];
     
     return YES;

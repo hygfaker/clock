@@ -27,9 +27,10 @@
                         <constraint firstAttribute="height" id="TsN-FX-21w"/>
                     </constraints>
                 </view>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="751" bounces="NO" bouncesZoom="NO" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="1" allowsSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="g1m-hr-8Ai">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="751" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="1" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="g1m-hr-8Ai">
                     <rect key="frame" x="0.0" y="65" width="375" height="308"/>
-                    <color key="backgroundColor" red="0.76587562350000005" green="1" blue="0.1234406353" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" red="0.13939279130000001" green="0.50052045430000003" blue="0.95768229169999997" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="308" id="sPH-Dt-FgZ"/>
                     </constraints>
